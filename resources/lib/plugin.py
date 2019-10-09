@@ -428,7 +428,7 @@ def playContent(content_url):
 
     xbmc.log(stream_url, level=xbmc.LOGDEBUG)
 
-    play_item = xbmcgui.ListItem(path=getCorrectedM3U8(stream_url))
+    play_item = xbmcgui.ListItem(path=stream_url)
     xbmcplugin.setResolvedUrl(_handle, True, listitem=play_item)
 
 
